@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class VEDArbin<E>{
-    
+    // Este es el método principal
     public static void main(String[] args) {
         
     }
