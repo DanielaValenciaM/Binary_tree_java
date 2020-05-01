@@ -1,12 +1,11 @@
 
-package semana.pkg5;
 
 /**
  * La siguiente clase representa un arbol binario de busqueda, 
  * en el cual no existen datos repetidos y los datos se encuentran en orden, de manera que, a la izquierda 
  * de cada padre todos los datos son menores y a la derecha todos son mayores. 
 
-
+**/
 public class VEDArbin {
     
     /*
