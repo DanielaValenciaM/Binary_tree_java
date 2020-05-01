@@ -4,7 +4,7 @@ public class Semana5 {
 
     public static void main(String[] args) {
         
-        VEDArbin arbolPrueba = new VEDArbin();
+        Arbol arbolPrueba = new Arbol();
         arbolPrueba.insertar(4);
         arbolPrueba.insertar(5);
         arbolPrueba.insertar(2);
