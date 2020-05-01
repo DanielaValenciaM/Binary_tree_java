@@ -6,32 +6,34 @@
  * de cada padre todos los datos son menores y a la derecha todos son mayores. 
 
 **/
-public class VEDArbin {
+public class Arbol {
     
     /*
     Cada arbol se compone de varios nodos en donde cada uno puede tener dos hijos y a su vez un nodo puede ser hijo de otro
     Se crea la clase NodoArbol para una mayor comprension del problema.
     */
-    private class nodoArbol {
+    private class NodoArbol {
         //Cada nodo tiene un hijo izquierdo, un hijo derecho y un dato asociados
         //Cabe anotar que cada uno de los hijos es a su vez un arbol binario
-        private VEDArbin hd;
-        private VEDArbin hi;
+        private Arbol hd;
+        private Arbol hi;
         private int dato;
         
         //Constructor
-        private void nodoArbol(){
+        private void NodoArbol(){
             hd = null;
             hi = null;
             dato = 0;
         }
 
+
+  
         //Getters y Setters
-        public VEDArbin getHd() {
+        public Arbol getHd() {
             return hd;
         }
 
-        public VEDArbin getHi() {
+        public Arbol getHi() {
             return hi;
         }
 
@@ -39,11 +41,11 @@ public class VEDArbin {
             return dato;
         }
 
-        public void setHd(VEDArbin hd) {
+        public void setHd(Arbol hd) {
             this.hd = hd;
         }
 
-        public void setHi(VEDArbin hi) {
+        public void setHi(Arbol hi) {
             this.hi = hi;
         }
 
@@ -54,11 +56,11 @@ public class VEDArbin {
     }
     
     //Todo arbol tiene un nodo inicial que se denomina raiz
-    public nodoArbol raiz;
+    public NodoArbol raiz;
  
     //Constructor
-    public void abb(){
-        nodoArbol raiz = new nodoArbol();
+    public void Arbol(){
+        raiz = new NodoArbol();
     }
  
     //Metodo para saber si un arbol es vacio o no, simplemete se pregunta si el nodo raiz de ese arbol es null
@@ -77,10 +79,10 @@ public class VEDArbin {
     
     public void insertar(int a){
         if (esVacio()) {
-            nodoArbol nuevo = new nodoArbol();
+            NodoArbol nuevo = new NodoArbol();
             nuevo.dato = a;
-            nuevo.hd = new VEDArbin();
-            nuevo.hi = new VEDArbin();
+            nuevo.hd = new Arbol();
+            nuevo.hi = new Arbol();
             raiz = nuevo;
         }
         else {
