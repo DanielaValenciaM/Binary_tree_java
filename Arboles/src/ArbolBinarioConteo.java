@@ -43,7 +43,8 @@ public class ArbolBinarioConteo {
 		System.out.println("       "+izqnieto1.getVal()+"      "+izqnieto2.getVal()+"                    "+dernieto1.getVal());//Nivel 4 del arbol
 		System.out.println("            "+izqbisnieto1.getVal()+"                    "+derbisnieto1.getVal()+"      "+derbisnieto2.getVal());//Nivel 5 del arbol
 		
-		int numero = Integer.parseInt(JOptionPane.showInputDialog("Ingrese el nodo que desea buscar:"));
+		int numero = Integer.parseInt(JOptionPane.showInputDialog("Ingrese un numero:"));
+		int totalMayores = 
 		VEDArbin<Integer> buscar=new VEDArbin<Integer>();
 		if(numero==izqhijo1.val || numero==izqnieto1.val || numero==izqbisnieto1.val || numero==izqnieto1.val || numero==izqnieto2.val || numero==izqhijo2.val || numero==izq.val || numero==derhijo1.val || numero==derbisnieto1.val || numero==derbisnieto2.val || numero==dernieto1.val || numero==derhijo2.val || numero==der.val || numero==raiz.val){
             System.out.println("EL NUMERO " + numero+ " SI ESTÁ CONTENIDO EN EL ARBOL");
