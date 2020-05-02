@@ -64,21 +64,19 @@ public class Nodo {
     	
     	if (valor < this.dato) {
     	  if (hi != null) {
-    	  	System.out.println("El valor insertado en " + dato);
-    		  this.hi.insertar(dato);
+    		  hi.insertar(valor);
     	  }
     	  
     	  else { 
-    		  this.hi = nodoHijo;
+    		  hi = nodoHijo;
     	  }
     	}
     	  else {
-    		  if (hd != null) {
-    	    System.out.println("El valor insertado2 en " + dato);
-    		this.hd.insertar(dato);
+    		if (hd != null) {
+    			hd.insertar(valor);
     		}
     		  else {
-    			  this.hd = nodoHijo;
+    			  hd = nodoHijo;
     		  }
     	  }
     }
