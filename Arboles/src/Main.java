@@ -18,12 +18,14 @@ public class Main {
         
         System.out.println("====================Verificacion funcionamiento metodo=================");
         
-        int numero = 7;
-        int totalMayores = arbolPrueba.contarMayores(numero);
-        
         arbolPrueba.recorrerArbol();
         
-//        System.out.println("Total mayores " + totalMayores); 
+//        int numero = 7;
+//        int totalMayores = arbolPrueba.recorrerArbol(numero);
+        
+        
+//        System.out.println("En total de numeros mayores es: " + totalMayores);
+        
     }
     
 }

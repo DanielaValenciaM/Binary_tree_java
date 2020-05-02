@@ -101,22 +101,30 @@ public class Nodo {
       }
     
     
-    public void recorrerArbol () {
-    	System.out.println("El valor del nodo raiz es: " + this.dato);
+    	public void recorrerArbol () {
+    		int numero = 7, totalMayores=1;
+    		System.out.println("El valor del nodo es: " + this.dato);
     	
-    	if (this.hi!=null) {
- //         	System.out.println("El valor del nodo es: " + this.hi.dato);
-          	hi.recorrerArbol();
+    		if (this.hi!=null) {
+    			hi.recorrerArbol();
+    			if (numero > this.dato);
+    			totalMayores++;
+    		}
+    		if (this.hd!=null) {
+    			hd.recorrerArbol();
+    			if (numero > this.dato);
+    			totalMayores++;
+    		}
+        	System.out.println("hay " + totalMayores + " numeros mayores al 7");
     	}
-    	if (this.hd!=null) {
-  //  		System.out.println("El valor del nodo es: " + this.hd.dato);
-    		hd.recorrerArbol();
-    	}
-    }
-    
-    public int contarMayores(int numero)  {
- 	
-    	return 45;
-    }
-    
+
+    	
+//    public int contarMayores (int numero) {
+//    	int totalMayores=0;
+    	
+//    	while (this.hi.dato < numero || this.hd.dato < numero) {
+//    		totalMayores++;
+
+//	}
+//    }
 }
