@@ -64,7 +64,8 @@ public class Nodo {
     	
     	if (valor < this.dato) {
     	  if (hi != null) {
-    	  	this.hi.insertar(dato);
+    	  	System.out.println("El valor insertado en " + dato);
+    		  this.hi.insertar(dato);
     	  }
     	  
     	  else { 
@@ -73,6 +74,7 @@ public class Nodo {
     	}
     	  else {
     		  if (hd != null) {
+    	    System.out.println("El valor insertado2 en " + dato);
     		this.hd.insertar(dato);
     		}
     		  else {
@@ -102,10 +104,16 @@ public class Nodo {
     
     
     public void recorrerArbol () {
-    	System.out.println("El valor del nodo es: " + raiz.dato);
-      	System.out.println("El valor del nodo es: " + raiz.hi.dato);
-      	System.out.println("El valor del nodo es: " + raiz.hd.dato);
+    	System.out.println("El valor del nodo raiz es: " + this.dato);
     	
+    	if (this.hi!=null) {
+ //         	System.out.println("El valor del nodo es: " + this.hi.dato);
+          	hi.recorrerArbol();
+    	}
+    	if (this.hd!=null) {
+  //  		System.out.println("El valor del nodo es: " + this.hd.dato);
+    		hd.recorrerArbol();
+    	}
     }
     
     public int contarMayores(int numero)  {

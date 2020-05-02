@@ -4,7 +4,7 @@ public class Main {
 
     public static void main(String[] args) {
         
-        Nodo arbolPrueba = new Nodo();
+        Nodo arbolPrueba = new Nodo(11);
         arbolPrueba.insertar(4);
         arbolPrueba.insertar(5);
         arbolPrueba.insertar(2);
@@ -21,7 +21,9 @@ public class Main {
         int numero = 7;
         int totalMayores = arbolPrueba.contarMayores(numero);
         
-        System.out.println("Total mayores " + totalMayores);
+        arbolPrueba.recorrerArbol();
+        
+//        System.out.println("Total mayores " + totalMayores); 
     }
     
 }
