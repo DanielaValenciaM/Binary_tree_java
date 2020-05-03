@@ -1,3 +1,4 @@
+import javax.swing.JOptionPane;
 
 public class Main {
 
@@ -18,13 +19,10 @@ public class Main {
         
         System.out.println("====================Verificacion funcionamiento metodo=================");
         
-        arbolPrueba.recorrerArbol();
+        int numero = Integer.parseInt(JOptionPane.showInputDialog("Ingrese el nodo que desea buscar:"));
+        int totalMayores = arbolPrueba.encontrarMayores(numero);
         
-//        int numero = 7;
-//        int totalMayores = arbolPrueba.recorrerArbol(numero);
-        
-        
-//        System.out.println("En total de numeros mayores es: " + totalMayores);
+        System.out.println("En total de numeros mayores es: " + totalMayores);
         
     }
     
